@@ -1,0 +1,101 @@
+.gallery-pic{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(330px,1fr)) ;
+    grid-template-rows: repeat(auto-fill,minmax(300px,1fr));
+    /* grid-template-rows: repeat(auto-fit,minmax(300px,301px)); */
+    grid-gap: 2px;
+    margin: 120px;
+}
+.gallery-pic img{
+    width: 100%;
+    height: 300px;
+}
+.gallery-pic img:hover{
+    transition: .4s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.gallery{
+    max-width: 2500px;
+    width: 100%;
+    margin: auto;
+}
+.gallery-modal{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    /* display: none; */
+}
+.gallery-modal.open{
+    transition: .5s ease-out;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+    pointer-events: all;
+    /* display: none; */
+}
+.modal-img{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    height: 70%;
+    transform: translate(-50%,-60%) scale(.5);    
+    transition: .25s ease-out;
+}
+
+.modal-img.open{
+    transform: translate(-50%,-60%) scale(1);    
+}
+.modal-text{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    color: whitesmoke;
+    text-decoration: underline;
+    transform: translate(-50%);
+}
+
+.last-img{
+    grid-column: span 3;
+}
+.gallery-modal button{
+    position: absolute;
+    background: none;
+    /* border: none; */
+    border-radius: 90px;
+    color: white;
+}
+.gallery-modal button:focus{
+    outline: none;
+}
+.gallery-modal button:nth-of-type(1) {
+    top: 50%;
+    transform: translate(0%,-50%);
+}
+.gallery-modal button:nth-of-type(2) {
+    right: 0%;
+    top: 50%;
+    transform: translate(0%,-50%) rotate(180deg);
+    /* padding: 5px; */
+}
+
+.modal-arrow1{
+    pointer-events: none;
+    margin: 5px;
+    font-size: 40px;
+    position: relative;
+    right: 1px;
+}
+.modal-arrow2{
+    pointer-events: none;
+    margin: 5px;
+    position: relative;
+    bottom: 1px;
+    font-size: 40px;
+    right: 1px;
+}

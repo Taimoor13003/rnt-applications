@@ -1,0 +1,221 @@
+.gallery2-sec {
+  margin: 20px 0px;
+  left: 50%;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* padding-left: 10px; */
+  /* background-color: indigo; */
+  position: relative;
+  max-width: 2500px;
+  transform: translate(-50%);
+}
+.exp2 div,
+.exp1 div,
+.exp3 div
+ {
+  overflow: hidden;
+}
+@media screen and (min-width: 501px) {
+  .exp1 {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(80px, 500px));
+    grid-template-rows: repeat(2, minmax(80px, 1fr));
+    gap: 15px;
+    /* display: none; */
+  }
+  .exp1 img,
+  .exp2 img,
+  .exp3 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .exp1 :nth-child(4) {
+    grid-column: span 2;
+  }
+  .exp1 :nth-child(8) {
+    grid-column: span 2;
+  }
+
+
+  .exp2 {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(80px, 500px));
+    grid-template-rows: repeat(2, minmax(80px, 1fr));
+    gap: 15px;
+    /* display: none; */
+  }
+  .exp2 :nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  .exp2 :nth-child(1) img {
+    transform: scale(1.1);
+    /* max-height:650px; */
+    /* grid-column: span 2; */
+  }
+  .exp2 :nth-child(4) {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: hotpink;
+  }
+  .exp2 :nth-child(4) img {
+    transform: rotate(90deg) scale(1.5);
+    position: relative;
+    right: 80px;
+  }
+  .exp2 :nth-child(3) {
+    order: 6;
+    grid-column: span 2;
+  }
+  .exp2 :nth-child(2) {
+    grid-column: span 2;
+  }
+  
+  .exp1 img,
+  .exp2 img,
+  .exp3 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .exp3 {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(80px, 500px));
+    grid-template-rows: repeat(2, minmax(80px, .5fr));
+    gap: 15px;
+    /* display: none; */
+  }
+
+  .exp3 :nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .exp3 :nth-child(3) {
+    
+  }
+  .exp3 :nth-child(3) img{
+    position: relative;
+    transform: rotate(90deg)scale(2.5);
+    
+  }
+  .exp3 :nth-child(5) {
+    grid-column: span 3;
+    /* grid-row: span 2; */
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .exp1 img,
+  .exp2 img,
+  .exp3 img {
+    width: 100%;
+    height: 100%;
+  }
+  .exp1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 144px));
+    grid-template-rows: repeat(3, minmax(80px, 144px));
+    gap: 15px;
+    /* display: none; */
+  }
+  .exp1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .exp1 :nth-child(4) {
+    grid-column: span 2;
+  }
+
+  .exp2 {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(50px, 74px));
+    grid-template-rows: repeat(3, minmax(80px, 220px));
+    gap: 15px;
+    /* display: none; */
+  }
+  .exp2 :nth-child(1) {
+    order: 1 ;
+    grid-row: span 1;
+    grid-column: span 3;
+  }
+  .exp2 :nth-child(1) img {
+    transform: scale(1.1);
+    /* max-height:650px; */
+    /* grid-column: span 2; */
+  }
+  .exp2 :nth-child(4) {
+    /* grid-row: span 2; */
+    order: 2;
+    grid-column: span 3;
+    background-color: hotpink;
+  }
+  .exp2 :nth-child(4) img {
+    transform: rotate(90deg) scale(1.5);
+    position: relative;
+    top: 20px;
+    /* right: 80px; */
+  }
+  .exp2 :nth-child(3) {
+    order: 6;
+    grid-column: span 6;
+  }
+  .exp2 :nth-child(2) {
+    grid-column: span 6;
+  }
+  .exp2 :nth-child(2) img {
+    position: relative;
+    /* bottom: 50px; */
+  }
+  .exp2 :nth-child(3) img {
+    position: relative;
+    /* bottom: 50px; */
+  }
+
+  .exp3 {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(50px, 500px));
+    grid-template-rows: repeat(3, minmax(80px, 220px));
+    gap: 15px;
+    /* display: none; */
+  }
+
+  .exp3 :nth-child(1) {
+    order: 1;
+    grid-column: span 2;
+    grid-row: span 1;
+    background-color: lavender;
+  }
+  .exp3 :nth-child(2) {
+    display: none;
+  }
+  .exp3 :nth-child(3) {
+    grid-column:span 3 ;
+    grid-row: span 2;
+  }
+  .exp3 :nth-child(4) {
+    grid-column:span 3 ;
+    grid-row: span 2;
+  }
+  .exp3 :nth-child(3) img{
+    position: relative;
+    transform: rotate(90deg)scale(2.5);
+
+  }
+  .exp3 :nth-child(5) {
+    grid-column: span 4;
+    /* grid-row: span 2; */
+  }
+  .exp3 :nth-child(5) img{
+    
+    /* grid-row: span 2; */
+  }
+
+  
+}
+
+.hey{
+  height: 200px;
+  width: 200px;
+  background-color: lawngreen;
+}

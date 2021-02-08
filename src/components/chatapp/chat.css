@@ -1,0 +1,210 @@
+.round-logo{
+    position: fixed;
+    font-size: 50px;
+    bottom: 120px;
+    right: 31px;
+    border-radius:100px;
+    background-color: rgb(255, 196, 0);
+    width:  45px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    transition: .2s linear ;
+    cursor: pointer;
+    /* overflow: hidden; */
+}
+.round-logo:hover{
+transform: scale(1.4);
+}
+.pre-icon{
+color: white;
+transform: scale(1);
+font-size: 40px;
+left: 3px;
+position: relative;
+bottom: 20px;
+}
+
+.chat-box{
+    position: fixed;
+    bottom: 30px;
+    right: 100px;
+    /* border-radius:0px 0px 20px 20px; */
+    box-shadow: 1px 1px 5px 1px rgb(138, 137, 137);
+    /* background-color: rgb(255, 196, 0); */
+    /* background-color: rgb(177, 176, 176); */
+    background-color: white;
+    /* width: 2; */
+    min-height: 400px;
+    max-height: 500px;
+    transition: .2s linear ;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width:420px){
+.chat-box{
+    right: 85px;
+}
+}
+@media only screen and (max-width:400px){
+.chat-box{
+    width: 250px;
+}
+}
+@media only screen and (max-width:400px){
+.chat-box{
+    width: 250px;
+}
+}
+.small-width{
+    width: 300px;
+}
+@media only screen and (max-width:400px){
+    .small-width{
+        width: 250px !important ;
+} 
+}
+.box-heading{
+    background-color: rgb(255, 196, 0);
+    padding: 0px 5px;
+    color: rgb(51, 50, 50);
+    font-weight: bold;
+    font-size: 25px;
+}
+.chat-msg{
+    min-height: 320px;
+    max-height: 400px;
+    background: white;
+    overflow: auto;
+}
+.chat-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-text button{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius:100px ;
+}
+
+.chat-text textarea{
+    margin-top: 20px;
+    /* padding: 0px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* width: 250px; */
+    border: none;
+    box-shadow: none;
+    outline: none;
+    /* display: inline-block; */
+    width: 100%;
+    /* height: 8px; */
+    /* max-height:70px ; */
+    /* resize: none; */
+
+}
+
+    .tel{
+        position: relative;
+        align-items: flex-start;
+        /* top: 0px; */
+        
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        bottom: 0px;
+        /* height: 50px; */
+    }
+  
+  .tel .screen .voice {
+    position: absolute;
+    right: 5px;
+    /* left: 94%; */
+    bottom: 6px;
+    background: #00897B;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.2);
+  }
+
+  .tel .screen .voice:focus {
+      box-shadow: none;
+      outline: none;
+  }
+  i {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  div.edit {
+    position: relative ;
+    /* width: 300px; */
+    /* display: inline-block; */
+      /* bottom: 4px; */
+      /* left: 5px; */
+      /* right: 50px; */
+      padding: 10px 40px 15px 10px ;
+
+      min-height: 50px;
+      background: #fff;
+      border-radius: 15px;
+      max-height: 100px;
+      overflow: auto;
+      box-shadow: 1px 1px 5px 1px rgb(105, 105, 105);
+  }
+  div.edit:focus  {
+      outline: none;
+  }
+
+  div[contenteditable="true"] br {display:none;}
+
+.admin-right{
+    height: 100vh;
+    width: 75%;
+    
+}
+  
+div.edit::-webkit-scrollbar ,.chat-msg::-webkit-scrollbar {
+    width: 10px;
+}
+div.edit::-webkit-scrollbar-track  {
+    /* margin-top: 10px ;
+    margin-bottom: 10px ; */
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+ .chat-msg::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+div.edit::-webkit-scrollbar-thumb , .chat-msg::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+.inside::-webkit-scrollbar {
+    width: 2px;
+}
+.inside::-webkit-scrollbar-track  {
+    /* margin-top: 10px ;
+    margin-bottom: 10px ; */
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+.inside::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+}
+.inside::-webkit-scrollbar-thumb  {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+
+

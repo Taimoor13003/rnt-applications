@@ -1,0 +1,309 @@
+
+.dg-parent img{
+    width: 100%;
+    height: 100%;
+    /* filter: grayscale(100%); */
+    transition: filter 1s;
+    
+    border: 5px solid white;
+    image-orientation: from-image;
+}
+.dg-parent img:hover{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0%);
+}
+.dg-parent{
+}
+@media  (min-width:757px)and  (max-width:2500px){
+
+    
+    .dg-parent{
+        /* margin-top: 100px; */
+        display: grid;
+        width: 100%;
+        padding: 5px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 2500px;
+        background-color: black;
+        /* height:100vh; */
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(6, 18vw);
+        gap: 10px;
+    }
+    .dg-parent :nth-child(1){
+        width: 100%;
+        position: relative;
+        background-color: brown;
+}
+.dg-parent :nth-child(2){
+    width: 100%;
+    position: relative;
+    background-color: green;
+}
+.dg-parent :nth-child(3){
+    width: 100%;
+    position: relative;
+    grid-column: span 2;
+    background-color: burlywood;
+}
+.dg-parent :nth-child(4){
+    width: 100%;
+    position: relative;
+    background-color: chocolate;
+}
+.dg-parent :nth-child(5){
+    width: 100%;
+    position: relative;
+    background-color: darkblue;
+    grid-row: span 2;
+}
+.dg-parent :nth-child(6){
+    /* display: none; */
+    width: 100%;
+    position: relative;
+    background-color: cornsilk;
+
+}
+.dg-parent :nth-child(7){
+    width: 100%;
+    position: relative;
+    background-color: coral;
+}
+.dg-parent :nth-child(8){
+    width: 100%;
+    position: relative;
+    background-color: black;
+    grid-column: span 2;
+}
+.dg-parent :nth-child(9){
+    width: 100%;
+    position: relative;
+    background-color: chartreuse;
+}
+.dg-parent :nth-child(10){
+    width: 100%;
+    position: relative;
+    background-color: cadetblue;
+}
+.dg-parent :nth-child(11){
+    width: 100%;
+    position: relative;
+    background-color: burlywood;
+}
+.dg-parent :nth-child(12){
+    width: 100%;
+    /* grid-row: span 2; */
+    order: 1;
+    position: relative;
+    background-color: brown;
+}
+.dg-parent :nth-child(13){
+    width: 100%;
+    grid-row: span 2;
+    position: relative;
+    background-color: blueviolet;
+}
+.dg-parent :nth-child(14){
+    width: 100%;
+    position: relative;
+    background-color: blue;
+}
+.dg-parent :nth-child(15){
+    width: 100%;
+    position: relative;
+    background-color: blanchedalmond;
+}
+.dg-parent :nth-child(16){
+    width: 100%;
+    grid-column: span 2;
+    position: relative;
+    background-color: black;
+}
+.dg-parent :nth-child(17){
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+}
+.dg-parent :nth-child(18){
+    width: 100%;
+    position: relative;
+    background-color: pink;
+}
+.dg-parent :nth-child(19){
+    width: 100%;
+    position: relative;
+    order: 2;
+    background-color: aquamarine;
+}
+.dg-parent :nth-child(20){
+    width: 100%;
+    position: relative;
+    background-color: aqua;
+}
+.dg-parent :nth-child(21){
+    width: 100%;
+    position: relative;
+    background-color: yellowgreen;
+    grid-column: span 2;
+}
+.dg-parent :nth-child(22){
+    width: 100%;
+    position: relative;
+    background-color: yellow;
+}
+.dg-parent :nth-child(23){
+    width: 100%;
+    position: relative;
+    background-color: violet;
+}
+.dg-parent :nth-child(24){
+    width: 100%;
+    position: relative;
+    background-color: tomato;
+}
+}
+
+
+
+@media (min-width:575px) and (max-width:757px){
+
+    
+    .dg-parent{
+        /* margin-top: 100px; */
+        display: grid;
+        width: 100%;
+        background-color: black;
+        padding: 5px;
+        /* height:100vh; */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(7, 15vw);
+        gap: 10px;
+    }
+    .dg-parent :nth-child(1){
+        width: 100%;
+        position: relative;
+        background-color: brown;
+}
+.dg-parent :nth-child(2){
+    width: 100%;
+    position: relative;
+    background-color: green;
+}
+.dg-parent :nth-child(3){
+    width: 100%;
+    position: relative;
+    background-color: burlywood;
+}
+.dg-parent :nth-child(4){
+    width: 100%;
+    position: relative;
+    background-color: chocolate;
+}
+.dg-parent :nth-child(5){
+    grid-row: span 2;
+    width: 100%;
+    position: relative;
+    background-color: darkblue;
+}
+.dg-parent :nth-child(6){
+    width: 100%;
+    position: relative;
+    background-color: cornsilk;
+}
+.dg-parent :nth-child(7){
+    width: 100%;
+    position: relative;
+    background-color: coral;
+}
+.dg-parent :nth-child(8){
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+.dg-parent :nth-child(9){
+    width: 100%;
+    position: relative;
+    background-color: chartreuse;
+}
+.dg-parent :nth-child(10){
+    width: 100%;
+    position: relative;
+    background-color: cadetblue;
+}
+.dg-parent :nth-child(11){
+    width: 100%;
+    position: relative;
+    background-color: burlywood;
+}
+.dg-parent :nth-child(12){
+    width: 100%;
+    grid-row: span 2;
+    position: relative;
+    background-color: brown;
+}
+.dg-parent :nth-child(13){
+    width: 100%;
+    grid-row: span 2;
+    position: relative;
+    background-color: blueviolet;
+}
+.dg-parent :nth-child(14){
+    width: 100%;
+    position: relative;
+    background-color: blue;
+}
+.dg-parent :nth-child(15){
+    width: 100%;
+    position: relative;
+    grid-row: span 2;
+    background-color: blanchedalmond;
+}
+.dg-parent :nth-child(16){
+    width: 100%;
+    position: relative;
+    background-color: black;
+}
+.dg-parent :nth-child(17){
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+}
+.dg-parent :nth-child(18){
+    width: 100%;
+    position: relative;
+    background-color: pink;
+}
+.dg-parent :nth-child(19){
+    width: 100%;
+    position: relative;
+    background-color: aquamarine;
+}
+.dg-parent :nth-child(20){
+    width: 100%;
+    position: relative;
+    background-color: aqua;
+}
+.dg-parent :nth-child(21){
+    width: 100%;
+    position: relative;
+    background-color: yellowgreen;
+}
+.dg-parent :nth-child(22){
+    width: 100%;
+    position: relative;
+    background-color: yellow;
+}
+.dg-parent :nth-child(23){
+    width: 100%;
+    position: relative;
+    background-color: violet;
+}
+.dg-parent :nth-child(24){
+    width: 100%;
+    position: relative;
+    background-color: tomato;
+}
+}

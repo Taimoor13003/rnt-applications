@@ -1,0 +1,19 @@
+.ProjectCover{
+    height: 500px;
+    background-image: url('../../../images/projectCover.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+.cover-text{
+    font-size: 80px;
+}
+@media only screen and (max-width:650px){
+    .cover-text{
+        font-size: 10vw;
+    }
+    
+}

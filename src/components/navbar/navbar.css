@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+* ,body{
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.menu {
+  margin: auto;
+  max-width: 1500px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0px 40px 0px 40px;
+}
+
+.menu-item {
+  color: white;
+  /* color: black; */
+  text-decoration: none;
+  transition: 0.8s;
+  transition-property: color;
+  text-align: center;
+}
+
+.menu-item:hover {
+  color: rgb(219, 209, 209);
+  text-decoration: none;  
+}
+.original{
+  filter: invert(100%);
+}
+
+.navi  {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  transition: .5s  , backdrop-filter 0s ;
+  box-shadow: 5px -2px 12px 1px rgb(173, 173, 173);
+  background-color: rgba(255, 254, 255,.80);
+  z-index: 100;
+}
+
+.bi1{
+  margin-left: 39px;
+}
+
+@media only screen and (min-width: 768px) {
+  .uli {
+    width: 100%;
+    margin: 0;
+    line-height: 60px;
+    padding-right: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    list-style: none;
+  }
+  .li1 {
+    height: 145px;
+    width: 100px;
+    position: fixed;
+    top: 30px;
+  }
+  .logo-img {
+    background-color: blue;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0,.5);
+    height: 100px;
+    width: 100px;
+    border-radius:90px;
+  }
+  .bi1{
+    top: -20px ;
+    /* left: 39px; */
+    left: 50%;
+    transform: translate(-50%);
+    position: fixed;
+    z-index: 2000;
+    max-width: 1500px;
+    /* margin-left: 39px; */
+    background-color: yellow;
+    height: 1px;
+    list-style: none;
+  }
+  .li3 {
+    float: right;
+    justify-items: end;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px 40px 0px auto;
+    font-size: 20px;
+  }
+  
+  .li3 a,
+  .li4 a,
+  .li5 a{
+  
+    text-decoration: none;
+    position: relative;
+    /* color: rgb(223, 217, 217); */
+    color: black;
+    /* color: yellow; */
+    /* text-shadow: 1px 1px 1px black; */
+    bottom: 0px;
+    font-weight: bold;
+    
+    height: 90px;
+  }
+  .li3 a:hover,
+  .li4 a:hover,
+  .li5 a:hover{
+    transition: .6s;
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+.li3 a:before, 
+.li4 a:before,
+.li5 a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color:rgb(79, 69, 67);
+  transition: all 0.4s ease-in-out;
+}
+
+.li3 a:hover:before,
+.li4 a:hover:before,
+.li5 a:hover:before{
+  width: 100%;
+  background-color: white;
+}
+
+ 
+  .li4 {
+    display: inline-block;
+    margin: 0px 40px;
+    font-size: 20px;
+  }
+  .li5 {
+    margin: 0px 40px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .li2{
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .navi {
+    min-width: 325px;
+    z-index: 1000;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+  }
+
+
+
+  .navi-length {
+    min-width: 325px;
+    transition: .4s ease-in-out;
+    height: 330px;
+    min-width: 325px;
+    z-index: 1000;
+  }
+
+
+
+
+
+  .uli {
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  .li1 {
+    height: 145px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+  }
+  .logo-img {
+    background-color: blue;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0,.5);
+    height: 100px;
+    width: 100px;
+    border-radius:90px;
+  }
+  .li2{
+    position: relative;
+    top: 15px;
+     display: block;
+     text-align: right;
+  }
+  .li3 {
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 120px 40px 0px 40px;
+    font-size: 20px;
+  }
+  
+  .li3 a,
+  .li4 a,
+  .li5 a{
+    
+    text-decoration: none;
+    position: relative;
+    /* color: rgb(223, 217, 217); */
+    color: black;
+    bottom: 0px;
+    padding: 10px 0px;
+    display: block;
+    font-weight: bold;
+  }
+  
+  .li3 a:before, 
+  .li4 a:before,
+  .li5 a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    padding-top: 2px;
+    background-color:rgb(79, 69, 67);
+    display: block;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .li3 a:hover:before,
+  .li4 a:hover:before,
+  .li5 a:hover:before{
+    width: 100%;
+    background-color: black;
+  }
+
+  .li3 a:hover,
+  .li4 a:hover,
+  .li5 a:hover{
+    transition: .6s;
+    position: relative;
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px white;
+
+    display: block;
+  }
+  .li4 {
+    display: block;
+    margin: 0px 40px;
+    font-size: 20px;
+  }
+  .li5 {
+    margin: 0px 40px;
+    display: block;
+    font-size: 20px;
+  }
+  .li6{
+    position: fixed;
+    z-index: 10;
+    left: 100%;
+    transform: translate(-100px);
+    top: 0px;
+  }
+  .bi1{
+    position: fixed;
+    top: -20px ;
+    /* left: 39px; */
+    /* margin-left: 39px; */
+    z-index: 2000;
+    width: 0px;
+    height: 0px;
+    list-style: none;
+  }
+  .nav-img1{
+    width: 300px;
+    height: 300px;
+  }
+  .li2 span button{
+    outline: none;
+    border: none;
+    background: none;
+    letter-spacing: 5px;
+    font-size: 23px;
+    /* color: rgb(182, 182,182);  */
+  }
+  .li2 {
+    /* background-color: white; */
+    /* transform: rotate(90deg); */
+    display: inline-block;
+    padding-left: auto;
+    position: relative;
+    left: 100%;
+    transform: translate(-50%);
+
+    transform: rotate(90deg);
+  }
+  .li2 span :hover{
+    color: white;
+  }
+  .cross1{
+    transform: rotate(45deg) translate( 9px,0px);
+    animation: cross1-anim .4s 1;
+    transition: .5s;
+    color: rgb(155, 154, 154);
+  }
+  @keyframes cross1-anim {
+    0% {transform: rotate(0deg) translate(0px, 0px)}
+    10% {transform: rotate(0deg) translate(5px, 0px)}
+    100% {transform: rotate(45deg) translate(9px, 0px)}}
+  .cross2{
+    transform: rotate(-45deg) translate( -8px,-3px);
+    animation: cross2-anim .4s 1;  
+    transition: .5s;
+    color: rgb(155, 154, 154);
+  }
+  @keyframes cross2-anim {
+    0% {transform: rotate(0deg) translate(0px, 0px)}
+    10% {transform: rotate(0deg) translate(-5px, 0px)}
+    100% {transform: rotate(-45deg) translate(-8px, -3px)}
+  }
+
+  .line1{
+    transform: rotate(0deg) translate( 0px,0px);
+    animation: line1-anim .4s 1;
+    transition: .5s;
+    color: rgb(155, 154, 154);
+  }
+  @keyframes line1-anim {
+    0% {transform: rotate(45deg) translate(9px, 0px)}
+    30% {transform: rotate(0deg) translate(5px, 0px)}
+    100% {transform: rotate(0deg) translate(0px, 0px)}}
+  .line2{
+    transform: rotate(0deg) translate( 0px,0px);
+    animation: line2-anim .4s 1;  
+    transition: .5s;
+    color: rgb(155, 154, 154);
+  }
+  @keyframes line2-anim {
+    0% {transform: rotate(-45deg) translate(-8px, -3px)}
+    30% {transform: rotate(0deg) translate(-5px, 0px)}
+    100% {transform: rotate(0deg) translate(0px, 0px)}
+  }
+  .start-line {
+    transition: .4s;
+    color: rgb(155, 154, 154);
+  }
+}
+
+@media only screen and (max-width:342px){
+  .li6{
+    position: fixed;
+    z-index: 10;
+    left: 230px;
+    transform: translate(0px);
+    top: 0px;
+  }
+}
+.is-active{
+  opacity: .8;
+}
